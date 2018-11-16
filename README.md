@@ -1,4 +1,4 @@
-# easyQuote
+# easyQuote-Python
 Used to check past quotes, compare them and add new ones
 
 Coded and tested on Linux Mint 18.2 Sonya
