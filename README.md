@@ -13,7 +13,7 @@ It simplifies the task of comparing the change in prices. Also you can copy the 
 
 ----------------
 
-There columns are:
+The columns are:
 
 1 = Date the quote was made - 2 = Part Number of product - 3 = Price bought - 4 = Percent added to bought price - 5 = Price at which it was sold - 6 = Profit made
 
