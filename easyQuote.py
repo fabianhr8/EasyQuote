@@ -106,7 +106,7 @@ class easyQuote:
     ########## Quit program
     def quit(self, event):
         root.destroy()
-
+ 
 
 root = Tk()  
 easy_q = easyQuote(root)
