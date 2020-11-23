@@ -1,25 +1,23 @@
-# Easy_Quote
-Downloads info from a spreadsheet on Google Sheets, then turns it into a CSV file where we can make queries on part numbers for items quoted in the past. Used to compare price and other changes on the items over time.
+# easyQuote
+Reads a series of CSV files that have quotes made on products accross time. In this case there are only 3 files as an example. In a simple GUI you write the part number of the product you are looking for, and the script will iterate through the CSV files and return a new CSV file with the times the product was quoted, making it easier to compare changes in prices over time.
 
-Programmed in Python 3
-2019-2020
+Programmed in Python
+2020
 
-Coded and tested on:
+Written and tested on:
   Linux Mint 18.2 Sonya
   Windows 10
 
 ----------------
 
-The program uses the "oauth2client" and "gspread" libraries to get the informaion on a spreadsheet on Google Sheets using the Google Drive API. The information from the spreadsheet is written into a CSV file using the "CSV" library. The file is called "quotesFile.csv".
+The script displays a simple GUI with a text input and a button. You should write the part number of the product you are looking for in the text input, then click on the button. The program will go to a folder called "inv/" and iterate over the CSV files on that are inside the folder (in this case there are only 3 files "jan", "feb", and "mar" with a couple of quotes on each, as an exmple).
 
-After that, a GUI is created using the "Tkinker" library. The GUI only consists of an Entry field and a Button. On the field we write the part number we are looking for and then click Enter or click the button.
-
-Using the "CSV" library we read from the "quotesFile.csv" searching for the part number. If there is no item with that part number then the string "Times quoted: 0" is returned. If there is indeed an item with that part number then a new CSV file named "sampleRows.csv" where it writes all the times the item was quoted.
+On each CSV file, the script will find all the times the selected part number was quoted, and return on a new CSV file called "sampleRows.csv" all the times the part number was quoted, making it easier to compare changes in prices over time. The script and the CSV files can be modified to display other variables like stock, or whatever the user needs about the products.
 
 ----------------
 
 The columns are:
 
-1 = Date the quote was made / 2 = Part Number of product / 3 = Description of product / 4 = Quantity quoted / 5 = Cost of product to us / 6 = Price at which it was sold
+1 = Date the quote was made / 2 = Part Number of product / 3 = Description of product / 5 = Price of product
 
 --------------
